@@ -26,7 +26,7 @@ def coronaDetails():
 def plot_png():
     mainList=test.test()
     confirmed = []
-    for i in range(1,len(mainList)-1):
+    for i in range(1,len(mainList)):
         confirmed.append(mainList[i][2])
     
     fig = plot.create_figure(mainList,(len(mainList)-2),confirmed)
